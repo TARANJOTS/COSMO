@@ -1,0 +1,88 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+body{
+    /* background-image: url("https://media.giphy.com/media/WUyQbeKHhpaHrrKJu6/giphy.gif"); */
+    background-image: url("/images/NASA bg 3.PNG");
+    background-size: cover;
+} 
+.container-fluid {
+    padding-top: 70px;
+}
+.navbar {
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    padding-right: 30px;
+    padding-left: 30px;
+    letter-spacing: 5px;
+}
+.navbar-dark .navbar-brand {
+    color:#ffdf2b;
+}
+
+.nav-item .nav-link {
+    font-size: 30px;
+    margin:3px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffdf2b ;
+}
+  
+.footer-padding {
+    padding-bottom: 60px;
+}
+  
+.footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #313131
+}
+  
+.footer p {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#start{
+    font-family: 'Pacifico', cursive;
+    font-size: 400%;
+    color:#ffdf2b;
+    text-align: center;
+}
+
+.HomePageBtn{
+    margin:50px;
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+}
+.card{
+    margin:10px;
+    padding:10px;
+}
+.card-header{
+    color:#ffdf2b;
+    background-color: #313131;
+    padding:5px;
+    font-size: 30px;
+}
+.card-title{
+    font-size: 30px;
+}
