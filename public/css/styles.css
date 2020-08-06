@@ -49,7 +49,7 @@ body{
     text-align: center;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    /* height: 60px; */
     background-color: #313131
 }
   
@@ -73,16 +73,74 @@ body{
 .btn{
     margin-top: 10px;
 }
-.card{
+.APOD.card{
     margin:10px;
     padding:10px;
 }
-.card-header{
+.APOD .card-header{
     color:#ffdf2b;
     background-color: #313131;
     padding:5px;
     font-size: 30px;
 }
-.card-title{
+.APOD .card-title{
     font-size: 30px;
 }
+.result{
+    padding:4px;
+    height: auto;
+}
+.card-deck {
+    margin: 8%;
+}
+.search-query{
+    margin-top:5%;
+    margin-left: 5%;
+    color:#ffdf2b;
+}
+.sq{
+    text-transform: capitalize;
+}
+.result-image{
+    width: 100%;
+    height: 100px;
+}
+.card-deck {
+    margin: 8%;
+}
+.card-deck .card {
+    margin: 10%;
+}
+.Quote{
+    margin: 5%;
+    align-items: center;
+}
+#accordian{
+    margin:5%
+}
+.icon-contact,.icon-footer{
+    color:white;
+}
+.blockquote{
+    margin: 5%;
+}
+.blockquote-footer{
+    text-align: center;
+    color: white;
+}
+.about-quote{
+    color:#ffdf2b;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+}
+.popover{
+    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+}
+.pi{
+    max-width: 30rem;
+    max-height: 30rem;
+}
+.tap {
+    cursor: pointer;
+  }

@@ -1,10 +1,35 @@
+    </div>
+    <div class="footer-padding"></div>
+    <div class="footer">
+      <p>© Copyright 2020 Taranjot Singh</p>
+      <div class="text-center">
+        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/taranjot-singh-809193197/"><i
+            class="fa fa-linkedin fa-lg icon-footer"></i></a>
+        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/taranjots2001"><i
+            class="fa fa-twitter fa-lg icon-footer "></i></a>
+        <a class="btn btn-social-icon" href="mailto:taranjotsfeb2001@gmail.com"><i class="fa fa-envelope fa-lg icon-footer"></i></a>
+      </div>
+    </div>
+    </div>
 
-</div>
-<div class="footer-padding"></div>
-  <div class="footer">
-    <p>Taranjot</p>
-  </div>
-</div>
-</body>
+    </div>
+    <script>
+      (function ($) {
+
+        var body = $('body'),
+          popover = '[data-toggle="popover"]',
+          tap = () => $(body).toggleClass('tap');
+
+        $(popover).popover({
+          html: true
+        });
+
+        $(body).on({
+          'shown.bs.popover': tap,
+          'hidden.bs.popover': tap
+        }, popover);
+
+      })(jQuery);
+    </script>
+  </body>
 </html>
-

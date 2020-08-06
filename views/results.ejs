@@ -1,7 +1,23 @@
-
 <%- include("partials/header"); -%>
 
 
+<div class="container">
+  <h2 class="search-query">You Searched For: <em class='sq'><%= query %></em> </h2>
+  <div class="card-deck ">
+
+    <% searchResults.forEach(function(item){ %>
+    <%console.log(item.links[0].href)%>
+    <%console.log(item.data[0])%>
+    <div class="col-md-3">
+      <div class="card result">
+        <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h3><%= item.data[0].title %></h3>"
+          data-content="<img src='<%= item.links[0].href %>' alt='Can not Display the Image' class='pi'/>"><img
+            class="card-img-top result-image" src="<%= item.links[0].href %> " alt="<%= item.data[0].title %>"> </a>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
 
 
 <%- include("partials/footer"); -%>

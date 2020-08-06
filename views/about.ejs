@@ -1,0 +1,56 @@
+<%- include("partials/header"); -%>
+<div class="col-12">
+    <blockquote class="blockquote">
+        <p class="mb-0 about-quote "><i> “The Earth is the cradle of humanity, but mankind cannot stay in the cradle
+                forever.”</i></p>
+        <footer class="blockquote-footer">Konstantin Tsiolkovsky
+            <cite title="Source Title"></cite>
+        </footer>
+    </blockquote>
+</div>
+
+
+<div class="row row-content">
+    <div class="col-sm-12">
+        <div id="accordian">
+            <div class="card bg-dark text-white">
+                <div class="card-header" role="tab" id="NASA_APOD">
+                    <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#APOD"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Sources: <small>NASA APIS</small></h3>
+                    </button>
+                </div>
+                <div class="collapse" id="APOD" data-parent="#accordian">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block"><strong>Astronomy Picture of the Day:</strong> One of the most
+                            popular websites at NASA is the Astronomy Picture of the Day. In fact, this website is one
+                            of the most popular websites across all federal agencies. It has the popular appeal of a
+                            Justin Bieber video. </p>
+                        <p class="d-none d-sm-block"><strong>NASA Image and Video Library</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <div class="card-header" role="tab" id="NASA_I&V_Lib">
+                    <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#Lib"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Developed By: <small>Taranjot Singh</small></h3>
+                    </button>
+                </div>
+                <div class="collapse" id="lib" data-parent="#accordian">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block">Contact Me at:</p>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/taranjot-singh-809193197/"><i
+                                class="fa fa-linkedin fa-lg icon-contact"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/taranjots2001"><i
+                                class="fa fa-twitter fa-lg icon-contact"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:taranjotsfeb2001@gmail.com"><i
+                                class="fa fa-envelope fa-lg icon-contact"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%- include("partials/footer"); -%>

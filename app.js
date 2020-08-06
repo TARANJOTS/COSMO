@@ -29,14 +29,39 @@ app.get("/APOD",function(req,res){
             const title=APOD.title;
             const explanation=APOD.explanation;
             const image=APOD.hdurl;
+            const video=APOD.hdurl;
+            if(APOD.media_type=="video"){
+                const video=APOD.url;
+            }
             const copyright=APOD.copyright;
             console.log(APOD);
             console.log(copyright);
-            res.render("APOD",{title:title,explanation:explanation,image:image,copyright:copyright});
+            res.render("APOD",{title:title,explanation:explanation,image:image,copyright:copyright,video:video});
         })
     })
 })
+app.get("/about",function(req,res){
+    res.render("about")
+})
 
+app.post("/results",function(req,res){
+    const query=req.body.search;
+    const url="https://images-api.nasa.gov/search?media_type=image&q="+query;
+    console.log(url);
+    https.get(url,function (response) {
+        var data = ''; 
+        response.on('data', (chunk) => { 
+            data += chunk.toString(); 
+        }); 
+        response.on('end', () => { 
+            const body = JSON.parse(data);
+            const items=body.collection.items;
+            console.log(items);
+            res.render("results",{searchResults:items,query:query})
+        }); 
+        
+    });
+})
 
 app.listen(3000, function() {
     console.log("Server started on port 3000");
